@@ -13,3 +13,5 @@ Usage of ./m3u8Cacher:
   -t, --thread int        download thread limit (default 10)
   -w, --use-working-dir   use working directory instead of executable directory
 ```
+
+工具附带的 http server 默认监听在8000端口，方便局域网内在线播放（包括 AirPlay），退出请按 Ctrl+C

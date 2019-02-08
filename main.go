@@ -80,7 +80,7 @@ func doDownload(url string) {
 	case m3u8.MEDIA:
 		mediapl := p.(*m3u8.MediaPlaylist)
 
-		addrChan := setupDownloader(mediapl.Count())
+		addrChan := setupDownloader(int(mediapl.Count()))
 		for i := uint(0); i < mediapl.Count(); i++ {
 			s := mediapl.Segments[i]
 			if !strings.HasPrefix(s.URI, "http") {
